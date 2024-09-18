@@ -28,12 +28,21 @@ nav ul {
 
 nav ul li {
     margin: 0 35px;
+    padding: 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    /*font-weight: bold;*/
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    scale: 1;
+    color: #26c7ff;
+    border-radius: 5px;
+    list-style: none;
 }
 
 .intro {
@@ -340,4 +349,27 @@ footer p {
 
 #contact h2 {
     padding-bottom: 80px;
+}
+
+
+/* Botón de descarga */
+#about a button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #2b2b2b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about a button:hover {
+    background-color: #0083b3;
+    transform: translateY(-2px);
+}
+
+#about a button:active {
+    transform: translateY(1px);
 }
